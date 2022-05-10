@@ -1,0 +1,14 @@
+body {
+    background-color: #eeeeee;
+}
+
+.card {
+    background-color: #eeeeee;
+}
+
+.btn {
+    font-family: "Poppins", "sans-serif";
+    background-color: #42526e;
+    color: white;
+    border-radius: 10px;
+}

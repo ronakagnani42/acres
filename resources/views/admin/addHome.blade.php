@@ -40,7 +40,7 @@
             <option value="2">South</option>
             <option value="3">East</option>
             <option value="4">West</option>
-          </select><br><br>
+        </select><br><br>
         <input type="submit">
 
 </body>
