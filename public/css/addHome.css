@@ -1,13 +1,14 @@
-.navbar{
-    background-color: #b3b3b3;
-}
-
 body {
     background-color: #eeeeee;
+    font-family: "Poppins", "sans-serif";
 }
 
-.card {
-    background-color: #eeeeee;
+.text_field{
+    border-radius: 10px;
+}
+
+.selection{
+    border-radius: 20px;
 }
 
 .btn {
