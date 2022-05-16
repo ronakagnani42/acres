@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,31 +21,39 @@
     @include('layouts.navbar')
     <div class="container text-center">
         <h1>Add Home </h1>
-        <form action="/addHome" method="POST">
+        <form action="/addHome" method="POST" enctype="multipart/form-data" class="form ">
             @csrf
-            <input type="text" class="text_field" name="house_flat_number" placeholder="House/Flat Number"> <br><br>
-            <input type="text" class="text_field" name="address_line1" placeholder="Address Line 1"> <br><br>
-            <input type="text" class="text_field" name="address_line_2" placeholder="Address Line 2"> <br><br>
-            <input type="text" class="text_field" name="area" placeholder="Area"> <br><br>
-            <input type="text" class="text_field" name="city" placeholder="City"> <br><br>
-            <input type="radio" id="opt1" name="buyORrent" value="buy">
-            <label for="opt1">Buy</label>
+         <center>
 
-            <input type="radio" id="opt2" name="buyORrent" value="rent">
-            <label for="opt2">Rent</label><br><br>
+             <div class="form from-group">
+                 <input type="text" class="text_field form form-control col-sm-5 " name="house_flat_number" placeholder="House/Flat Number"> <br>
+                 <input type="text" class="text_field form form-control col-sm-5 " name="address_line1" placeholder="Address Line 1"> <br>
+                 <input type="text" class="text_field form form-control col-sm-5 " name="address_line_2" placeholder="Address Line 2"> <br>
+                 <input type="text" class="text_field form form-control col-sm-5 " name="area" placeholder="Area"> <br>
+                 <input type="text" class="text_field form form-control col-sm-5 " name="city" placeholder="City"> <br>
+                 <input type="radio" id="opt1" name="buyORrent" value="buy">
+                 <label for="opt1">Buy</label>
 
-            <input type="text" class="text_field" name="price" placeholder="Price"> <br><br>
-            <input type="text" class="text_field" name="bhk" placeholder="BHK"> <br><br>
-            <select class="selection form-select-sm mb-3" name="door_facing" aria-label="Default select example">
-                <option selected>Select Door Facing</option>
-                <option value="1">North</option>
-                <option value="2">South</option>
-                <option value="3">East</option>
-                <option value="4">West</option>
-            </select><br><br>
-            <input class="btn btn-light btn-md" type="submit">
-            <button class="btn btn-light btn-md">Cancel</button>
-    </div>
+                 <input type="radio" id="opt2" name="buyORrent" value="rent">
+                 <label for="opt2">Rent</label><br>
+                 <input type="text" class="text_field form form-control col-sm-5 " name="price" placeholder="Price"><br>
+                 <input type="text" class="text_field form form-control col-sm-5 " name="bhk" placeholder="BHK"><br>
+                 <select class="selection form-select-sm mb-3" name="door_facing" aria-label="Default select example">
+                     <option selected>Select Door Facing</option>
+                     <option value="1">North</option>
+                     <option value="2">South</option>
+                     <option value="3">East</option>
+                     <option value="4">West</option>
+                 </select><br><br>
+                 <input type="file" class="text_field" name="image"> <br><br>
+                 <input class="btn btn-light btn-md" type="submit">
+                 <button class="btn btn-light btn-md">Cancel</button>
+         </div>
+                </div>
+         </center>
+
+
+
 </body>
 
 </html>

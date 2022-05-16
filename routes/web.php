@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\adminDashboard;
 use App\Http\Controllers\addHomeController;
+use App\Http\Controllers\visitors\homeDataController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,7 +17,7 @@ use App\Http\Controllers\addHomeController;
 
 // defaults
 Route::get('/',function(){
-    return view('welcome');
+    return view('auth.login');
 });
 
 // Auth::routes();
@@ -26,3 +27,9 @@ Route::get('/',function(){
 Route::view('homie','admin.addHome');
 Route::post('/addHome',[addHomeController::class,'addHomeForm']);
 Route::get('/admin',[adminDashboard::class,'dashboard']);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/home_data',[homeDataController::class,'fetchHomeData']);

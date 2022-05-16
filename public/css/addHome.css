@@ -4,11 +4,11 @@ body {
 }
 
 .text_field{
-    border-radius: 10px;
+    border-radius: 4px;
 }
 
 .selection{
-    border-radius: 20px;
+    border-radius: 4px;
 }
 
 .btn {
