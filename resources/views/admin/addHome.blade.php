@@ -45,7 +45,7 @@
                      <option value="3">East</option>
                      <option value="4">West</option>
                  </select><br><br>
-                 <input type="file" class="text_field" name="image"> <br><br>
+                 <input type="file" class="text_field" name="input_image"> <br><br>
                  <input class="btn btn-light btn-md" type="submit">
                  <button class="btn btn-light btn-md">Cancel</button>
          </div>

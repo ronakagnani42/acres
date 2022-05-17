@@ -1,23 +1,33 @@
 @extends('layouts.app')
-
-@section('content')
+@can('isAdmin')
 <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
+    <div class="d-flex justify-content-center align-items-center" style="margin-top:18%;">
+        <div class="col-lg-2 mb-4">
+            <div class="card border-0">
+                <img class="card-img-top" src="{{ url('add_home_icon.png') }}" alt="add home">
 
                 <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
+                    <a href="http://127.0.0.1:8000/homie" class="btn btn-light btn-md">
+                        Add Home
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2 mb-4">
+            <div class="card border-0">
+                <img class="card-img-top" src="{{ url('show_inquiry_icon.png') }}" alt="show inquiry">
 
-                    {{ __('You are logged in!') }}
+                <div class="card-body">
+                    <a href="#" class="btn btn-light btn-md">
+                        Show Inquiries
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 </div>
-@endsection
+
+@iscan('isUser')
+
+@endcan
+
